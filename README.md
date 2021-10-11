@@ -1,2 +1,2 @@
-# conversor-REACT
+# Conversor-REACT
 A  currency converter project
