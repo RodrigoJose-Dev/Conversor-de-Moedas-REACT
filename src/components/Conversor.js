@@ -8,10 +8,17 @@ export default class Conversor extends Component {
       moedaA_valor: "",
       moedaB_valor: 0,
     };
+
+    //fazer o this existir para 'converter'
+    this.converter = this.converter.bind(this);
   }
 
   converter() {
-    console.log("convertido");
+    let usd_brl = 5.53;
+
+    let result = this.state.moedaA_valor * usd_brl;
+
+    this.setState({ moedaB_valor: result });
   }
 
   render() {
@@ -29,7 +36,7 @@ export default class Conversor extends Component {
         <button type="button" onClick={this.converter}>
           Converter
         </button>
-        <h2>Valor Convertido</h2>
+        <h2>Valor da Conversão: {this.state.moedaB_valor}</h2>
       </div>
     );
   }
