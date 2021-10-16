@@ -1,2 +1,2 @@
 # Conversor-REACT
-A  currency converter project
+Project created for studies only, without any commercial purposes
